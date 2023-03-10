@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #00000098;
+        }
+
+         h2{
+            font-size: 3em;
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+       
+        
+
+        h3{
+            border-radius: 40px;
+            background-color: rgb(85, 169, 248);
+            padding: .3rem;
+            margin-top: 20px;
+            width: 100%;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        form{
+            background-color: rgba(0, 0, 0, 0.596);
+            opacity: 50%;
+            margin: 30px;
+            padding: 100px;
+            color: white;
+            
+        }
+
+        .form{
+            width: 60%;
+            display: flex;
+            justify-content: right;
+            margin-left: 70px;
+        }
+
+        button{
+            background-color: rgb(85, 169, 248);
+            border: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        
+        input{
+            border-top-style: hidden;
+            color: white;
+            border-bottom-style: hidden;
+            border-left-style: hidden;
+            border-right-style: hidden;
+            text-decoration: none;
+            background-color: black;
+        
+         }
+
+         .note{
+             color: white;
+         }
+
+         .login{
+            border: none;
+             background-color: transparent;
+             resize: none;
+             outline: none;
+         }
+
+
+         #password{
+            border: none;
+             background-color: transparent;
+             resize: none;
+             outline: none;
+         }
+</style>
+
+</head>
+<body>
+   <h2>Sign up here</h2>
+    
+    <div class="form">
+       <div class="form">
+        <form action="">
+            <label for="usrname">FullName*</label>
+                <br><br>
+                <input type="text" class="login" name="fullname" placeholder="Enter FullName" required>
+                <hr> <br>
+            <label for="usrname">Username*</label>
+                <br><br>
+                <input type="text" class="login" name="Username" placeholder="Enter Username" required>
+                <hr> <br>
+                <label for="usrname">Email*</label>
+                <br><br>
+                <input type="email" class="login" name="email" placeholder="Enter Email" required>
+                <hr> <br>
+                <label for="phone">Phone*</label>
+                <br><br>
+                <input type="tel" class="login" name="telephone" placeholder="Enter Phone number" required>
+                <hr> <br>
+            <label for="passw">Password*</label>
+                <br><br>
+                <input type="password" id="password" name="mobile" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter and not greater than 6 character" placeholder="Enter Password" required>
+                <hr><br>
+                <a href=""><input type="checkbox"> I Agree the terms and conditions</a>
+                <br><br>
+                <h3><button type="submit" id="submit-btn">submit</button></h3>
+        </form>
+       </div>
+    </div> 
+    <script src="register.js"></script>
+</body>
+</html>
